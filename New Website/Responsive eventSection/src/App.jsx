@@ -5,7 +5,7 @@ import EventSection from "./Components/eventsSection";
 const App = () => {
   return (
     <>
-      <Eventpage />
+      {/* <Eventpage /> */}
       <EventSection />
     </>
   );

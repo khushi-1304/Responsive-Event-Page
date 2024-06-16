@@ -195,26 +195,18 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .slider {
-    width: 500px;
+  .eventSection{
+    flex-direction: column; 
   }
-  .slider span {
-    left: 700px;
-    width: 250%;
-    height: 95%;
+  .slider{
+    /* position: absolute; */
+    flex-direction: column;
+    transform-style:none;
+    transform: none;
   }
-  .eventTitle {
-    top: 5px;
-    left: 40px;
+  .slider span{
+    transform-style: none;
+    transform: none;
   }
-  .eventDetails {
-    width: 78%;
-  }
-  .eventName {
-    font-size: 35px;
-    letter-spacing: 2.5px;
-  }
-  .viewEvent {
-    width: 35%;
-  }
+  
 }
