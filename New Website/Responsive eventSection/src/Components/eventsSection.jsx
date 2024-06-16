@@ -68,7 +68,7 @@ const eventsSection = () => {
               {eventOBJ[1].name}
             </div>
             <div data-scroll className="viewEvent">
-              <button data-scroll>View All Events</button>
+              <button data-scroll>View Event</button>
             </div>
           </div>
         </span>
@@ -97,7 +97,7 @@ const eventsSection = () => {
               {eventOBJ[2].name}
             </div>
             <div data-scroll className="viewEvent">
-              <button data-scroll>View All Events</button>
+              <button data-scroll>View Event</button>
             </div>
           </div>
         </span>
@@ -126,7 +126,7 @@ const eventsSection = () => {
               {eventOBJ[3].name}
             </div>
             <div data-scroll className="viewEvent">
-              <button data-scroll>View All Events</button>
+              <button data-scroll>View Event</button>
             </div>
           </div>
         </span>
@@ -155,7 +155,7 @@ const eventsSection = () => {
               {eventOBJ[4].name}
             </div>
             <div data-scroll className="viewEvent">
-              <button data-scroll>View All Events</button>
+              <button data-scroll>View Event</button>
             </div>
           </div>
         </span>

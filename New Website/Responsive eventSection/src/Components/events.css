@@ -157,7 +157,7 @@
     flex-direction: column;
     transform: none;
     width: 90vw;
-    margin: auto;
+    margin: 0 0 0 12px;
   }
 
   .slider span {
@@ -173,13 +173,17 @@
     clip-path: none;
   }
 
+  #bannerImage {
+    border-radius: 50px 20px 50px 20px;
+  }
+
   .eventTitlex {
     position: initial;
     transform: scaleX(-1);
-    font-size: 16px;
+    font-size: 15px;
     right: auto;
-    padding: 10px;
-    margin: 10px;
+    margin: 50px 20px 15px auto;
+    font-weight: 500;
   }
 
   .eventKeyWords {
@@ -189,9 +193,10 @@
   }
 
   .word {
-    font-size: 14px;
+    font-size: 15px;
     padding: 5px;
     width: 100%;
+    border-radius: 10px;
   }
 
   .cardbox {
@@ -204,20 +209,20 @@
   }
 
   .eventName {
-    font-size: 18px;
+    font-size: 21px;
     width: 100%;
     margin: -10px 0 20px -40px;
     padding: 0;
   }
 
   .viewEvent {
-    width: 40%;
+    width: 50%;
     margin-left: -40px;
     padding: 0;
   }
 
   .viewEvent button {
-    font-size: 12px;
-    padding: 5px;
+    font-size: 15px;
+    padding: 7px;
   }
 }
