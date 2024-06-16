@@ -83,7 +83,7 @@
   src: url("../fonts/Arame.ttf");
 }
 
-.eventTitle {
+.eventTitlex {
   position: absolute;
   top: 30px;
   left: 130px;
@@ -147,74 +147,77 @@
   font-weight: 700;
 }
 
-@media screen and (max-width: 968px) {
-  .slider {
-    width: 680px;
-  }
-  .slider span {
-    left: 350px;
-    width: 170%;
-  }
-  .eventTitle {
-    top: 20px;
-    left: 100px;
-  }
-  .eventDetails {
-    width: 76%;
-  }
-  .eventName {
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-  .viewEvent {
-    width: 31%;
-  }
-}
 @media screen and (max-width: 768px) {
+  .eventSection {
+    flex-direction: column;
+    transform: scaleX(-1);
+  }
+
   .slider {
-    width: 650px;
+    flex-direction: column;
+    transform: none;
+    width: 90vw;
+    margin: auto;
   }
+
   .slider span {
-    left: 450px;
-    width: 170%;
-    height: 110%;
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
   }
-  .eventTitle {
-    top: 17px;
-    left: 80px;
+
+  .octa {
+    width: 100%;
+    aspect-ratio: 1;
+    clip-path: none;
   }
+
+  .eventTitlex {
+    position: initial;
+    transform: scaleX(-1);
+    font-size: 16px;
+    right: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .eventKeyWords {
+    top: 0;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .word {
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .cardbox {
+    width: 100%;
+  }
+
   .eventDetails {
-    width: 77%;
+    display: flex;
+    flex-direction: column;
   }
+
   .eventName {
-    font-size: 40px;
-    letter-spacing: 3px;
+    font-size: 18px;
+    width: 100%;
+    margin: -10px 0 20px -40px;
+    padding: 0;
   }
+
   .viewEvent {
-    width: 35%;
+    width: 40%;
+    margin-left: -40px;
+    padding: 0;
   }
-}
-@media screen and (max-width: 480px) {
-  .slider {
-    width: 500px;
-  }
-  .slider span {
-    left: 700px;
-    width: 250%;
-    height: 95%;
-  }
-  .eventTitle {
-    top: 5px;
-    left: 40px;
-  }
-  .eventDetails {
-    width: 78%;
-  }
-  .eventName {
-    font-size: 35px;
-    letter-spacing: 2.5px;
-  }
-  .viewEvent {
-    width: 35%;
+
+  .viewEvent button {
+    font-size: 12px;
+    padding: 5px;
   }
 }
