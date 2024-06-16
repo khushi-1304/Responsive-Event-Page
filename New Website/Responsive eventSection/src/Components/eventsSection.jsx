@@ -7,37 +7,39 @@ import { useState } from "react";
 const eventsSection = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
-    var vw = window.innerHeight;
-    var sliderWidth = document.querySelector(".slider").scrollWidth;
-    var cardHeight = document.querySelector("span").clientHeight;
+    if (window.innerWidth > 768) {
+      var vw = window.innerHeight;
+      var sliderWidth = document.querySelector(".slider").scrollWidth;
+      var cardHeight = document.querySelector("span").clientHeight;
 
-    gsap.to(".eventSection", {
-      scrollTrigger: {
-        trigger: ".eventSection",
-        scroller: "body",
-        // markers: true,
-        start: "top 10%",
-        end: `top -${sliderWidth / 8}%`,
-        scrub: 1,
-        pin: true,
-      },
-    });
-    gsap.to(".eventSection .slider", {
-      rotateY: 130,
-      scrollTrigger: {
-        trigger: ".eventSection",
-        scroller: "body",
-        // markers: true,
-        start: "top 50%",
-        end: `top -${sliderWidth / 8}%`,
-        scrub: 1,
-        // pin: true
-      },
-    });
+      gsap.to(".eventSection", {
+        scrollTrigger: {
+          trigger: ".eventSection",
+          scroller: "body",
+          // markers: true,
+          start: "top 10%",
+          end: `top -${sliderWidth / 8}%`,
+          scrub: 1,
+          pin: true,
+        },
+      });
+      gsap.to(".eventSection .slider", {
+        rotateY: 130,
+        scrollTrigger: {
+          trigger: ".eventSection",
+          scroller: "body",
+          // markers: true,
+          start: "top 50%",
+          end: `top -${sliderWidth / 8}%`,
+          scrub: 1,
+          // pin: true
+        },
+      });
+    }
   });
   return (
     <div data-scroll className="eventSection">
-      <div data-scroll className="eventTitle">
+      <div data-scroll className="eventTitlex">
         /Recent Events
       </div>
       <div data-scroll className="slider">
